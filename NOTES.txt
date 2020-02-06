@@ -1,3 +1,6 @@
+   
+   componnet.html
+   /////////////////1//////////////////////////////////
     // create component by use function React
     //     function App(){
     //  return(
@@ -6,5 +9,18 @@
     //     </div>
     // )
 // }
-
+   ReactDOM.render(<App/>,document.getElementById('app'))
+/////////////////////////////2///////////////////////////
 // create component by use component React
+class App extends React.Component{
+    render(){
+        return(
+        <div>
+            <p>Hello React</p>
+        </div>
+        )
+    }
+}
+
+    ReactDOM.render(<App/>,document.getElementById('app'))
+    /////////////////////////
