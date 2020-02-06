@@ -24,12 +24,38 @@ class App extends React.Component{
     render(){
         return(
         <div>
-            <p>Hello React</p>
+           <Header title = "hello React" name ="Qasem"/>
+           <Content/>
+           <Footer 
+           />
         </div>
         )
     }
 }
 
+        class Header extends React.Component{
+            render(){
+                return(
+                    <header>{this.props e}</header>
+                )
+            }
+        }
+
+        class Content extends React.Component{
+            render(){
+                return(
+                    <main> Content</main>
+                )
+            }
+        }
+
+        class Footer extends React.Component{
+            render(){
+                return(
+                    <footer>Footer</footer>
+                )
+            }
+        }
     ReactDOM.render(<App/>,document.getElementById('app'))
 
 
