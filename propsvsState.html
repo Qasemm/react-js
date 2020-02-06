@@ -13,64 +13,39 @@
 
 <body>
 
-    <div id="app">
-
-
-    </div>
+    <div id="app"></div>
 
     <script type="text/babel">
 
-        class App extends React.Component{
-    state={
-        name: 'Hello in React Framework',
-    }
-    render(){
+
+//test parent and child 
+        class App extends  React.Component {
+    render() {
         return(
-        <div>
-            <p>{this.state.name}</p>
-           <Header name  = "hello React in Header"/>
-           <Content name = "hello React in Content"  />
-           <Footer name = "hello React in Footer"   />
-        </div>
+            <div>
+            <h4> Hello World in parent coomponenet</h4>   
+            <Child name=" test Child"/>
+            <Child1 name="test function"/>
+            </div>
         )
     }
 }
-
-        class Header extends React.Component{
-            state = {
-                name: 'Headre Component',
-            }
-            render(){
-                return(
-                    <header>{this.props.name} and state {this.sta
-                        
-                        
-                         te.name}</header>
-                )
-            }
-        }
-
-        class Content extends React.Component{
-            state = {
-                name: 'content Component',
-            }
-            render(){
-                return(
-                    <main>{this.props.name} and state {this.state.name}</main>
-                )
-            }
-        }
-
-        class Footer extends React.Component{
-            state = {
-                name: 'footer Component',
-            }
-            render(){
-                return(
-                    <footer>{this.props.name} and state {this.state.name}</footer>
-                )
-            }
-        }
+class Child extends React.Component{
+    render(){
+        return(
+            <p>
+                child component and {this.props.name}
+                </p>
+        )
+    }
+}
+// test props parmaters
+function Child1(props) {
+    return (
+            <h5> this Is test props function and <u> {props.name} </u> </h5>
+        )
+     
+} 
     ReactDOM.render(<App/>,document.getElementById('app'))
 
 
