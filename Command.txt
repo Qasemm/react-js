@@ -1,0 +1,14 @@
+install Reactjs by use npm 
+you must you have node can you download in website node.com after install node.
+it will install npm besiad node can you test that in command write:
+
+1- node-v
+2- npm -v
+
+if you want install reactjs :
+go to file and copy path folder and open command writ cd and paste psth
+and press enter now write :
+
+'npm install-g react-create-app'
+
+please wait some amoument 
