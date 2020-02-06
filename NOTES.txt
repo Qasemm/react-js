@@ -1,0 +1,10 @@
+    // create component by use function React
+    //     function App(){
+    //  return(
+    //     <div>
+    //         <p>Hello React</p>
+    //     </div>
+    // )
+// }
+
+// create component by use component React
