@@ -12,3 +12,8 @@ and press enter now write :
 'npm install-g react-create-app'
 
 please wait some amoument 
+
+///////////////
+buildin first appp react js
+*-create-react-app myapp
+*-npm start
