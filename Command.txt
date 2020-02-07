@@ -13,7 +13,10 @@ and press enter now write :
 
 please wait some amoument 
 
+npm install -g react-devtools
+
 ///////////////
 buildin first appp react js
 *-create-react-app myapp
 *-npm start
+this link learning install npm react step by step:https://reactjs.org/docs/create-a-new-react-app.html
