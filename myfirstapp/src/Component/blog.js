@@ -1,5 +1,6 @@
 import React , {Component} from 'react';
 import axios from 'axios';
+import "./blog.css"
  class Blog extends Component {
      state = { 
          users:[]
@@ -15,12 +16,24 @@ import axios from 'axios';
          })
      }
     render(){
+        const {users} = this.state;
+        const userlist = users.map(user=>{
+            return(
+                <div className="content">
+                    <div key={user.id}>
+                        <div> Name : {user.name}</div>
+                        <div> UserName : {user.username}</div>
+                        <div> UserEmail : {user.email}</div>
+                    </div>
+                </div>
+            )
+        })
         return(
             <div>
                 <h2> Blog </h2>
-                <p> this is Blog section </p>
+                <p>   this is Blog section </p>
                 <div>
-                    {this.state.users.map(user=> <div>{user.name}</div>)}
+                    {userlist}
                 </div>
             </div>
         )
