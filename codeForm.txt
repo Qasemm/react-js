@@ -31,3 +31,46 @@ state={
 }
 
 export default App;
+////////////////////////////////////////////////////////
+import React, {Component} from 'react';
+
+class App extends Component{
+state={
+  name:''
+}
+  handleChange =(e)=>{
+    this.setState({
+      name:e.target.value
+    })
+  }
+  handleSubmit = (e)=>{
+    e.preventDefault();
+    console.log(this.state.name)
+  }
+
+  render(){
+    return(
+      <div className="App">
+      <h2>form use react</h2>
+
+
+      <form onSubmit={this.handleSubmit}>
+        {/* <textarea type="text" onChange= {this.handleChange}/> */}
+        <select onChange={this.handleChange}>
+          <option value="value 1">value1</option>
+          <option value="value 2">value2</option>
+          <option value="value 3">value3</option>
+          <option value="value 4">value4</option>
+          <option value="value 5">value5</option>
+          <option value="value 6">value6</option>
+        </select>
+        <input type="submit" value="send"/>
+      </form>
+      {this.state.name}
+      </div>
+    )
+  }
+}
+
+export default App;
+

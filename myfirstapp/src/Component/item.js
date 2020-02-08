@@ -5,14 +5,14 @@ class Item extends Component {
 
        const {items} = this.props;
         const theitems = items.map((item)=>{
-            return(
-                <div key={item.id}>
-                    <p>{item.id}</p>
-                    <p>{item.name}</p>
-                    <p>{item.age}</p>
-                    <hr></hr>
-                </div>
-            )
+          return item.count > 5 ?(
+            <div key={item.id}>
+                 <p>{item.id}</p>
+                 <p>{item.name}</p>
+                 <p>{item.age}</p>
+                 <hr></hr>
+            </div>
+          ):null
         })
         return ( 
              <div>

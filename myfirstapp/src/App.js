@@ -1,30 +1,23 @@
 import React, {Component} from 'react';
-
+import Child from './Child';
+import Item from './Component/item'
 class App extends Component{
-state={
-  name:''
-}
-  handleChange =(e)=>{
-    this.setState({
-      name:e.target.value
-    })
+  state={
+    items:[
+      {id:'1' , name:'Qasem'    , age:'27' , count:'1'},
+      {id:'2' , name:'mohammad' , age:'30' , count:'2'},
+      {id:'3' , name:'Ahmad'    , age:'27' , count:'3'},
+      {id:'4' , name:'Ali'      , age:'30' , count:'4'},
+      {id:'5' , name:'Mahmmoud' , age:'27' , count:'5'},
+      {id:'6' , name:'mohammad' , age:'30' , count:'6'},
+    ] 
   }
-  handleSubmit = (e)=>{
-    e.preventDefault();
-    console.log(this.state.name)
-  }
-
   render(){
     return(
       <div className="App">
-      <h2>form use react</h2>
-
-
-      <form onSubmit={this.handleSubmit}>
-        <input type="text" onChange= {this.handleChange}/>
-        <button>Submit</button>
-      </form>
-      {this.state.name}
+       List Item
+       <p>*********************************************</p>
+       <Item items={this.state.items}/>
       </div>
     )
   }
