@@ -6,7 +6,7 @@ class Item extends Component {
        const {items} = this.props;
         const theitems = items.map((item)=>{
             return(
-                <div>
+                <div key={item.id}>
                     <p>{item.id}</p>
                     <p>{item.name}</p>
                     <p>{item.age}</p>
