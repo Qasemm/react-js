@@ -6,8 +6,9 @@ const Nav = ()=>{
                 <div className="container">
                     <a href="#" className="logo">logo</a>
                     <ul>
-                        <Link to="/">Home</Link>
-                        <Link to="/about">About</Link>
+                        <NavLink exact to="/">Home</NavLink>
+                        <NavLink to="/about">About</NavLink>
+                        <NavLink to="/blog">Blog</NavLink>
                     </ul>
                 </div>
            </div>
